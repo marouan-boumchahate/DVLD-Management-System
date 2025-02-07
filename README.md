@@ -51,8 +51,8 @@ DVLD (Driving License Management) is a comprehensive system built using **C# (.N
    - Open the project in **Visual Studio**.
    - Start the application.
    - login information (you must complete the steps number 2 and 3 first):
-       + username: marouan_08
-       + password: #abc%ABC%2003#
+       + username: *marouan_08*
+       + password: *#abc%ABC%2003#*
 
 ## 🛠️ Contributing
 We welcome contributions! To contribute:
