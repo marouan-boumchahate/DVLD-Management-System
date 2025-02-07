@@ -45,7 +45,7 @@ DVLD (Driving License Management) is a comprehensive system built using **C# (.N
    ```
 
 3. **Move the required folders**  
-   - Copy and replace the two folders [DVLD - login](Setup/DVLD%20-%20login/) & `DVLD - profiles` into your `C:\` directory.
+   - Copy and replace the two folders `Setup\DVLD - profiles` & `Setup\DVLD - profiles` into your `C:\` directory.
 
 4. **Run the application**  
    - Open the project in **Visual Studio**.
