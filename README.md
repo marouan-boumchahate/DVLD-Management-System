@@ -34,14 +34,14 @@ DVLD (Driving License Management) is a comprehensive system built using **C# (.N
    - Restore the backup file and name the database **`DVLD`** using the following SQL command:
    ```sql
    RESTORE DATABASE DVLD  
-   FROM DISK = 'C:\path\to\your\DVLD.bak'  
+   FROM DISK = 'backupDirectory\DVLD.bak'  
    WITH MOVE 'YourDatabaseName' TO 'C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\DATA\DVLD.mdf',  
    MOVE 'YourDatabaseName_log' TO 'C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\DATA\DVLD.ldf',  
    REPLACE, RECOVERY;
    ```
    - To find the correct logical names inside the backup file, run:
    ```sql
-   RESTORE FILELISTONLY FROM DISK = 'C:\path\to\your\DVLD.bak';
+   RESTORE FILELISTONLY FROM DISK = 'backupDirectoryr\DVLD.bak';
    ```
 
 3. **Move the required folders**  
