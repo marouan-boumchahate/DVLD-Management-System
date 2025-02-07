@@ -31,7 +31,7 @@ DVLD (Driving License Management) is a comprehensive system built using **C# (.N
    ```
 
 2. **Install the database backup file to SQL Server**  
-   - Restore the backup file (`Setup\DVLD.bak`) and name the database **`DVLD`** using the following SQL command:
+   - Restore the database backup file (`Setup\DVLD.bak`) and name it **`DVLD`** using the following SQL command:
    ```sql
    RESTORE DATABASE DVLD  
    FROM DISK = 'YourBackupDirectory\Setup\DVLD.bak'  
