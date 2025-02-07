@@ -1,0 +1,6 @@
+C:\Users\marou\OneDrive\Desktop\Courses\PROGRAMMING\ProgrammingAdvisesCourses\ProgrammingAdviseCourses\16- Real Project\DVLD - Driving License Management\Data Access Layer\bin\Debug\Data Access Layer.dll
+C:\Users\marou\OneDrive\Desktop\Courses\PROGRAMMING\ProgrammingAdvisesCourses\ProgrammingAdviseCourses\16- Real Project\DVLD - Driving License Management\Data Access Layer\bin\Debug\Data Access Layer.pdb
+C:\Users\marou\OneDrive\Desktop\Courses\PROGRAMMING\ProgrammingAdvisesCourses\ProgrammingAdviseCourses\16- Real Project\DVLD - Driving License Management\Data Access Layer\obj\Debug\Data Access Layer.csproj.AssemblyReference.cache
+C:\Users\marou\OneDrive\Desktop\Courses\PROGRAMMING\ProgrammingAdvisesCourses\ProgrammingAdviseCourses\16- Real Project\DVLD - Driving License Management\Data Access Layer\obj\Debug\Data Access Layer.csproj.CoreCompileInputs.cache
+C:\Users\marou\OneDrive\Desktop\Courses\PROGRAMMING\ProgrammingAdvisesCourses\ProgrammingAdviseCourses\16- Real Project\DVLD - Driving License Management\Data Access Layer\obj\Debug\Data Access Layer.dll
+C:\Users\marou\OneDrive\Desktop\Courses\PROGRAMMING\ProgrammingAdvisesCourses\ProgrammingAdviseCourses\16- Real Project\DVLD - Driving License Management\Data Access Layer\obj\Debug\Data Access Layer.pdb

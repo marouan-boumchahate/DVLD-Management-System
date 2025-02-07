@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0917D81-E832-4393-9AC5-62965DB5E5A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DVLD___System</RootNamespace>
+    <AssemblyName>DVLD - System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applications\Application Types\DVLD ManageApplicationsTypes Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Application Types\DVLD ManageApplicationsTypes Page.Designer.cs">
+      <DependentUpon>DVLD ManageApplicationsTypes Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Application Types\DVLD UpdateApplicationType Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Application Types\DVLD UpdateApplicationType Page.Designer.cs">
+      <DependentUpon>DVLD UpdateApplicationType Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\Control\ctrApplicationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\Control\ctrApplicationInfo.Designer.cs">
+      <DependentUpon>ctrApplicationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\ShowLocalDrivingApplication_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\ShowLocalDrivingApplication_Page.Designer.cs">
+      <DependentUpon>ShowLocalDrivingApplication_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers\DVLD ManageDrivers Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers\DVLD ManageDrivers Page.Designer.cs">
+      <DependentUpon>DVLD ManageDrivers Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Detained - Release Driving License\DVLD DetainLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Detained - Release Driving License\DVLD DetainLicense Page.Designer.cs">
+      <DependentUpon>DVLD DetainLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Detained - Release Driving License\DVLD ManageDetainLicenses Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Detained - Release Driving License\DVLD ManageDetainLicenses Page.Designer.cs">
+      <DependentUpon>DVLD ManageDetainLicenses Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Detained - Release Driving License\DVLD ReleaseLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Detained - Release Driving License\DVLD ReleaseLicense Page.Designer.cs">
+      <DependentUpon>DVLD ReleaseLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Lost - Damaged Driving License\DVLD LostDamagedLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Lost - Damaged Driving License\DVLD LostDamagedLicense Page.Designer.cs">
+      <DependentUpon>DVLD LostDamagedLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Re-New Driving License\DVLD ReNewLicense  Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Re-New Driving License\DVLD ReNewLicense  Page.Designer.cs">
+      <DependentUpon>DVLD ReNewLicense  Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\International Driving License\Control\InternationalDrivingLicenseCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\International Driving License\Control\InternationalDrivingLicenseCard.Designer.cs">
+      <DependentUpon>InternationalDrivingLicenseCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\International Driving License\DVLD AddNewInternationLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\International Driving License\DVLD AddNewInternationLicense Page.Designer.cs">
+      <DependentUpon>DVLD AddNewInternationLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\International Driving License\DVLD ManageInternationalLicenses Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\International Driving License\DVLD ManageInternationalLicenses Page.Designer.cs">
+      <DependentUpon>DVLD ManageInternationalLicenses Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\International Driving License\DVLD ShowInternationalLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\International Driving License\DVLD ShowInternationalLicense Page.Designer.cs">
+      <DependentUpon>DVLD ShowInternationalLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\Control\LocalDrivingLicenseCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\Control\LocalDrivingLicenseCard.Designer.cs">
+      <DependentUpon>LocalDrivingLicenseCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\Control\LocalDrivingLicenseCardWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\Control\LocalDrivingLicenseCardWithFilter.Designer.cs">
+      <DependentUpon>LocalDrivingLicenseCardWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\DVLD AddNewLocalDrivingLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\DVLD AddNewLocalDrivingLicense Page.Designer.cs">
+      <DependentUpon>DVLD AddNewLocalDrivingLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\DVLD IssueDrivingLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\DVLD IssueDrivingLicense Page.Designer.cs">
+      <DependentUpon>DVLD IssueDrivingLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\DVLD ManageLocalDrivingLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\DVLD ManageLocalDrivingLicense Page.Designer.cs">
+      <DependentUpon>DVLD ManageLocalDrivingLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Control\DrivingLicenseApplicationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Control\DrivingLicenseApplicationCard.Designer.cs">
+      <DependentUpon>DrivingLicenseApplicationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\DVLD ShowLicense Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Local Driving License\DVLD ShowLicense Page.Designer.cs">
+      <DependentUpon>DVLD ShowLicense Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Driving License Histories\DVLD ShowLicenseHistory Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving License Histories\DVLD ShowLicenseHistory Page.Designer.cs">
+      <DependentUpon>DVLD ShowLicenseHistory Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Application Tests\DVLD TakeTestSchedule Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Application Tests\DVLD TakeTestSchedule Page.Designer.cs">
+      <DependentUpon>DVLD TakeTestSchedule Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Application Tests\DVLD TestResult Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Application Tests\DVLD TestResult Page.Designer.cs">
+      <DependentUpon>DVLD TestResult Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Application Tests\DVLD TestAppointment Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Application Tests\DVLD TestAppointment Page.Designer.cs">
+      <DependentUpon>DVLD TestAppointment Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\DVLD VerifyCode Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global\DVLD VerifyCode Page.Designer.cs">
+      <DependentUpon>DVLD VerifyCode Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\Generate.cs" />
+    <Compile Include="Global\ImageProcess.cs" />
+    <Compile Include="Global\Validate.cs" />
+    <Compile Include="Login\DVLD Login Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\DVLD Login Page.Designer.cs">
+      <DependentUpon>DVLD Login Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\DVLD Add Person Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\DVLD Add Person Page.Designer.cs">
+      <DependentUpon>DVLD Add Person Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DVLD ChangeUserPassword Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\DVLD ChangeUserPassword Page.Designer.cs">
+      <DependentUpon>DVLD ChangeUserPassword Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DVLD Main Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVLD Main Page.Designer.cs">
+      <DependentUpon>DVLD Main Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\DVLD Manage People Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\DVLD Manage People Page.Designer.cs">
+      <DependentUpon>DVLD Manage People Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\DVLD Show Person Details Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\DVLD Show Person Details Page.Designer.cs">
+      <DependentUpon>DVLD Show Person Details Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DVLD Test Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVLD Test Page.Designer.cs">
+      <DependentUpon>DVLD Test Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\DVLD Update Person Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\DVLD Update Person Page.Designer.cs">
+      <DependentUpon>DVLD Update Person Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Control\PersonCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Control\PersonCard.Designer.cs">
+      <DependentUpon>PersonCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Control\PersonCardWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Control\PersonCardWithFilter.Designer.cs">
+      <DependentUpon>PersonCardWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Control\PersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Control\PersonInfo.Designer.cs">
+      <DependentUpon>PersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Global\Settings.cs" />
+    <Compile Include="Test Types\DVLD ManageTestTypes Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test Types\DVLD ManageTestTypes Page.Designer.cs">
+      <DependentUpon>DVLD ManageTestTypes Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test Types\DVLD UpdateTestType Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test Types\DVLD UpdateTestType Page.Designer.cs">
+      <DependentUpon>DVLD UpdateTestType Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\UserCard.Designer.cs">
+      <DependentUpon>UserCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DVLD Add_Edit User Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\DVLD Add_Edit User Page.Designer.cs">
+      <DependentUpon>DVLD Add_Edit User Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DVLD Manage Users Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\DVLD Manage Users Page.Designer.cs">
+      <DependentUpon>DVLD Manage Users Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\DVLD Show User Details Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\DVLD Show User Details Page.Designer.cs">
+      <DependentUpon>DVLD Show User Details Page.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Applications\Application Types\DVLD ManageApplicationsTypes Page.resx">
+      <DependentUpon>DVLD ManageApplicationsTypes Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Application Types\DVLD UpdateApplicationType Page.resx">
+      <DependentUpon>DVLD UpdateApplicationType Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Local Driving License\Control\ctrApplicationInfo.resx">
+      <DependentUpon>ctrApplicationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Local Driving License\ShowLocalDrivingApplication_Page.resx">
+      <DependentUpon>ShowLocalDrivingApplication_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\DVLD ManageDrivers Page.resx">
+      <DependentUpon>DVLD ManageDrivers Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Detained - Release Driving License\DVLD DetainLicense Page.resx">
+      <DependentUpon>DVLD DetainLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Detained - Release Driving License\DVLD ManageDetainLicenses Page.resx">
+      <DependentUpon>DVLD ManageDetainLicenses Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Detained - Release Driving License\DVLD ReleaseLicense Page.resx">
+      <DependentUpon>DVLD ReleaseLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\International Driving License\Control\InternationalDrivingLicenseCard.resx">
+      <DependentUpon>InternationalDrivingLicenseCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\International Driving License\DVLD AddNewInternationLicense Page.resx">
+      <DependentUpon>DVLD AddNewInternationLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\International Driving License\DVLD ManageInternationalLicenses Page.resx">
+      <DependentUpon>DVLD ManageInternationalLicenses Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\International Driving License\DVLD ShowInternationalLicense Page.resx">
+      <DependentUpon>DVLD ShowInternationalLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Local Driving License\Control\LocalDrivingLicenseCard.resx">
+      <DependentUpon>LocalDrivingLicenseCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Local Driving License\Control\LocalDrivingLicenseCardWithFilter.resx">
+      <DependentUpon>LocalDrivingLicenseCardWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Local Driving License\DVLD AddNewLocalDrivingLicense Page.resx">
+      <DependentUpon>DVLD AddNewLocalDrivingLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Local Driving License\DVLD IssueDrivingLicense Page.resx">
+      <DependentUpon>DVLD IssueDrivingLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Local Driving License\DVLD ManageLocalDrivingLicense Page.resx">
+      <DependentUpon>DVLD ManageLocalDrivingLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Control\DrivingLicenseApplicationCard.resx">
+      <DependentUpon>DrivingLicenseApplicationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Local Driving License\DVLD ShowLicense Page.resx">
+      <DependentUpon>DVLD ShowLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Driving License Histories\DVLD ShowLicenseHistory Page.resx">
+      <DependentUpon>DVLD ShowLicenseHistory Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Lost - Damaged Driving License\DVLD LostDamagedLicense Page.resx">
+      <DependentUpon>DVLD LostDamagedLicense Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Re-New Driving License\DVLD ReNewLicense  Page.resx">
+      <DependentUpon>DVLD ReNewLicense  Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Application Tests\DVLD TakeTestSchedule Page.resx">
+      <DependentUpon>DVLD TakeTestSchedule Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Application Tests\DVLD TestResult Page.resx">
+      <DependentUpon>DVLD TestResult Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Application Tests\DVLD TestAppointment Page.resx">
+      <DependentUpon>DVLD TestAppointment Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global\DVLD VerifyCode Page.resx">
+      <DependentUpon>DVLD VerifyCode Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\DVLD Login Page.resx">
+      <DependentUpon>DVLD Login Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\DVLD Add Person Page.resx">
+      <DependentUpon>DVLD Add Person Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\DVLD ChangeUserPassword Page.resx">
+      <DependentUpon>DVLD ChangeUserPassword Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DVLD Main Page.resx">
+      <DependentUpon>DVLD Main Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\DVLD Manage People Page.resx">
+      <DependentUpon>DVLD Manage People Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\DVLD Show Person Details Page.resx">
+      <DependentUpon>DVLD Show Person Details Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DVLD Test Page.resx">
+      <DependentUpon>DVLD Test Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\DVLD Update Person Page.resx">
+      <DependentUpon>DVLD Update Person Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Control\PersonCard.resx">
+      <DependentUpon>PersonCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Control\PersonCardWithFilter.resx">
+      <DependentUpon>PersonCardWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Control\PersonInfo.resx">
+      <DependentUpon>PersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Test Types\DVLD ManageTestTypes Page.resx">
+      <DependentUpon>DVLD ManageTestTypes Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test Types\DVLD UpdateTestType Page.resx">
+      <DependentUpon>DVLD UpdateTestType Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\DVLD Manage Users Page.resx">
+      <DependentUpon>DVLD Manage Users Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\DVLD Show User Details Page.resx">
+      <DependentUpon>DVLD Show User Details Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserCard.resx">
+      <DependentUpon>UserCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\DVLD Add_Edit User Page.resx">
+      <DependentUpon>DVLD Add_Edit User Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business Layer\Business Layer.csproj">
+      <Project>{a769e3a1-deba-4beb-a14f-7caf95652b55}</Project>
+      <Name>Business Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\Female_Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\Male_Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\Male_Profile_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\Female_Profile_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\Save_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\VisionTestLDLApplication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\WrittenTestLDLApplication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\DrivingTestLDLApplication.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
