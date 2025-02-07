@@ -27,7 +27,7 @@ DVLD (Driving License Management) is a comprehensive system built using **C# (.N
 ### **Steps**
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/dvld-system.git
+   git clone https://github.com/marouan-boumchahate/DVLD-Management-System.git
    ```
 
 2. **Install the database backup file to SQL Server**  
